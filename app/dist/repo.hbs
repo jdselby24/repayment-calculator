@@ -1,0 +1,13 @@
+{{#each (limit items 3)}}
+    <div id="repo{{@index}}" class="box repo"><a href="{{html_url}}">
+        <div class="avbox">
+            <img src="{{owner.avatar_url}}">
+        </div>
+        <div class="repo-text">
+            <h2 class="repo-name">{{name}}</h2>
+            <h4 class="repo-description">{{description}}</h4>
+            <h4 class="repo-stars"> ⭐ {{stargazers_count}}</h4>
+        </div>
+    </a>
+    </div>
+{{/each}}

@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  margin: 0;
+}
+
+body {
+  background-color: #a2a2ee;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#repoBox {
+  margin-top: 10px;
+}
+
+.repo {
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: #dcdcdc;
+    box-shadow: 5px 10px;
+
+  }
+
+  .repo-text {
+    margin: 20px;
+  }
+}
+
+.box {
+  background-color: #fefefe;
+  width: 600px;
+  box-shadow: 2.5px 5px #000000;
+  border: #000000 2px solid;
+  border-radius: 5px;
+  margin: 20px auto;
+  padding: 20px;
+  transition: background-color 0.5s linear;
+  transition: box-shadow 0.1s linear;
+
+  img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+  }
+
+  .repo-stars {
+    margin-top: 10px;
+  }
+}
+
+.banner {
+  background-color: #000000;
+  color: #fefefe;
+  border-color: #fefefe;
+}
+
+
+#repo0:hover ~ #repo1 { filter: blur(2px); }
+#repo0:hover ~ #repo2 { filter: blur(2px); }
+
+#repo1:hover ~ #repo0 { filter: blur(2px); }
+#repo1:hover ~ #repo2 { filter: blur(2px); }
+
+#repo2:hover ~ #repo0 { filter: blur(2px); }
+#repo2:hover ~ #repo1 { filter: blur(2px); }
+
+
